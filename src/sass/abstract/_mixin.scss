@@ -1,0 +1,6 @@
+//это применится для устройств с шириной экрана больше 768px
+@mixin media-desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
