@@ -123,6 +123,8 @@ body._touch .menu__list > li._active .menu__sub-list {
   visibility: visible;
   pointer-events: all;
   transform: translate(0px, 0px); }
+body._touch .menu__list > li._active .menu__arrow {
+  transform: rotate(-180deg); }
 
 .menu__link {
   color: blueviolet;

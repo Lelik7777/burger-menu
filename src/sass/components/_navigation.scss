@@ -47,13 +47,20 @@ body._touch {
   & .menu__link {
     flex: 1 1 auto;
   }
-// это то же самое,что и в 18 строчке - только срабатывает при нажатии стрелки
+
+  // это то же самое,что и в 18 строчке - только срабатывает при нажатии стрелки
   & .menu__list > li._active .menu__sub-list {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
     //меню будет подниматься вверх,когда проявляется
     transform: translate(0px, 0px);
+  }
+
+  //animation for arraw
+  & .menu__list > li._active .menu__arrow {
+    //это поворачивает стрелку при нажатии на 180 градусов
+    transform: rotate(-180deg);
   }
 }
 
