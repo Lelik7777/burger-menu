@@ -1,0 +1,17 @@
+//это применится для устройств с шириной экрана больше 768px
+@mixin media-desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+//это применится,когда ширина меньше 767px
+@mixin media-mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin transition {
+  transition: all 0.3s ease 0s;
+}

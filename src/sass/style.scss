@@ -1,3 +1,9 @@
-body{
-  background-color:yellow ;
-}
+@import "base/normalize";
+
+@import "abstract/mixin";
+
+@import "base/base";
+
+@import "components/page";
+@import "components/header";
+@import "components/navigation";
