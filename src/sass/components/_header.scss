@@ -34,57 +34,5 @@
 .menu__icon {
 
 }
-//основное меню
-.menu__list {
-  position: relative;
-  @include media-desktop {
-    display: flex;
-    align-items: center;
-    & > li {
-      padding: 10px 0;
-    }
-  }
-}
 
-.menu__link {
-  color: blueviolet;
-  font-size: 1.8rem;
-  margin: 0 0 0 20px;
-  &:hover{
-    text-decoration: underline;
-  }
-}
-//подменю - его позиционируем через абсолют
-.menu__sub-list {
-  position: absolute;
-  // это опускает меню на 100% от верха родителя
-  top: 100%;
-  right: 0;
-  background-color: black;
-  padding: 15px;
-  min-width: 100px;
 
-  @include media-desktop{
-    //это опускает меню на 10% вниз
-    transform: translate(0px,10%);
-    //это скрывает подменю
-    opacity: 0;
-    //это для того,чтобы с ним нельзя было взаимодействовать
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease 0s;
-  }
-
-  & > li {
-    margin: 0 0 10px 0;
-  }
-
-  & > li:last-child {
-    margin: 0;
-  }
-
-}
-
-.menu__sub-link {
-  color: #fff;
-}
